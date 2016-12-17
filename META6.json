@@ -1,0 +1,26 @@
+{
+    "perl"        : "6.c",
+    "name"        : "File::Find::More",
+    "version"     : "0.1.0",
+    "description" : "Provides file and directory routines not currently in module File::Find.",
+    "authors"     : [ "github:tbrowder" ],
+    "license"     : "Artistic 2.0",
+    "source-url"  : "https://github.com/tbrowder/File-Find-More-Perl6",
+    "support"     : {
+        "bugtracker" : "https://github.com/tbrowder/File-Find-More-Perl6/issues",
+        "source"     : "https://github.com/tbrowder/File-Find-More-Perl6"
+    },
+    "provides"    : {
+        "File::Find::More" : "lib/File/Find/More.pm6"
+    },
+    "test-depends"     : [
+	"Test::META"
+    ],
+    "depends" : [
+    ],
+    "resources" : [
+    ],
+    "tags" : [
+	"file directory functions"
+    ]
+}
