@@ -15,7 +15,7 @@ BEGIN {
 }
 
 
-sub find-dirs($dir) returns List is export(:find-dirs) {
+sub find-dirs($dir --> List) is export(:find-dirs) {
     my @dirs = ();
     if !$dir.IO.d {
 	say "WARNING: '$dir' is not a directory.";
@@ -38,7 +38,7 @@ sub find-dirs($dir) returns List is export(:find-dirs) {
     return @dirs;
 } # find-dirs
 
-sub find-files($dir) returns List is export(:find-files) {
+sub find-files($dir --> List) is export(:find-files) {
     my @fils = ();
     if !$dir.IO.d {
 	say "WARNING: '$dir' is not a directory.";
